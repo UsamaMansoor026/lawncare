@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4e9525;
+  --color-primary-dark: #3a681f;
+  --color-icons: #4d4d4d;
+  --color-secondary: #808080;
+  --color-yellowish: #fbd341;
+  --color-white: #fefae0;
+  --color-black: #0d0c1d;
+  --color-footer: #252525;
+
+  --font-roboto: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+
+.react-multi-carousel-dot button {
+  border: 1px solid var(--color-black) !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.react-multi-carousel-dot--active button {
+  background: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+}
+
+/* Media Queries */
+@media (width <= 660px) {
+  .contact-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    height: 230px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (width <= 520px) {
+  .testimonial-card {
+    height: 170px;
+    margin-inline: 0px;
+  }
+}
+
+@media (width <= 570px) {
+  .seasons-card-container,
+  .services-card-container,
+  .articles-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-submit-button {
+    width: 100%;
+  }
+}
+
+@media (width <= 400px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+  }
+}

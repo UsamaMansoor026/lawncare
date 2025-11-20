@@ -1,5 +1,6 @@
 import { images } from "../assets";
 import SectionHeading from "./SectionHeading";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -30,40 +31,70 @@ const About = () => {
 
           {/* List of about services */}
           <ul className="mt-5 flex flex-col space-y-5">
-            <li className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white">
+            <motion.li
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.5 }}
+              className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white"
+            >
               <span>Gutter cleaning</span>
               <span className="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-extralight group-hover:bg-yellowish group-hover:text-black duration-200">
                 <i className="fa-solid fa-arrow-right" />
               </span>
-            </li>
+            </motion.li>
 
-            <li className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white">
+            <motion.li
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white"
+            >
               <span>Organic fertilization</span>
               <span className="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-extralight group-hover:bg-yellowish group-hover:text-black duration-200">
                 <i className="fa-solid fa-arrow-right" />
               </span>
-            </li>
+            </motion.li>
 
-            <li className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white">
+            <motion.li
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white"
+            >
               <span>Weed control</span>
               <span className="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-extralight group-hover:bg-yellowish group-hover:text-black duration-200">
                 <i className="fa-solid fa-arrow-right" />
               </span>
-            </li>
+            </motion.li>
 
-            <li className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white">
+            <motion.li
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+              className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white"
+            >
               <span>New lawn installation</span>
               <span className="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-extralight group-hover:bg-yellowish group-hover:text-black duration-200">
                 <i className="fa-solid fa-arrow-right" />
               </span>
-            </li>
+            </motion.li>
 
-            <li className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white">
+            <motion.li
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+              className="flex items-center justify-between text-lg py-5 px-8 rounded-md relative shadow-xl shadow-black/10 text-black group duration-200 hover:bg-primary hover:text-white"
+            >
               <span>Mulch and other services</span>
               <span className="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-extralight group-hover:bg-yellowish group-hover:text-black duration-200">
                 <i className="fa-solid fa-arrow-right" />
               </span>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>
